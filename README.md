@@ -1,36 +1,35 @@
 # `Hello World!` 🌍
 
-### `THE PROJECT:` Game Store | React/JS, HTML, LESS/CSS
-v2- Version with multiples state components
+### `THE PROJECT:` Register Form | React/JS, HTML, LESS/CSS & Material UI
 
 <br>
 
-> `EN - This project was made as my first study of React: Class components, hierarchy components, State(), setState(), functions propagation & more. You can:`
->- Add new categories pressing ENTER. The new category will be added to form;
+> `EN - `
+>- 
 >
->- Add new product. You can add the new category or not. The new product will show the selected category or "uncategorized";
+>- 
 >
->- Delete product.
+>- 
 >
->- Delete category. If one or more products have the deleted category the category will be updated to "uncategorized"
+>- 
 >
-> `IT - Questo progetto è il mio primo progetto studiando React: Class components, hierarchia dei componenti, State(), setState(), functions propagation & altri. Puoi:`
->- Aggiungere nuove categorie premendo ENTER. La nuova categoria verrà aggiunta al form;
+> `IT - `
+>- 
 >
->- Aggiungere un nuovo prodotto. Puoi aggiungere una categoria o no. Il nuovo prodotto mostrerà la categoria selezionata o "senza categoria";
+>- 
 >
->- Cancellare un prodotto;
+>- 
 >
->- Cancellare una categoria. Se la categoria è stata già vincolata ad un prodotto, questo si aggiornarà e mostrerà "senza categoria";
+>- 
 >
-> `PT - Este projeto foi meu primeiro projeto estudando React: Class components, hierarchy components, State(), setState(), functions propagation & mais. Nele você poderá:`
->- Adicionar uma nova categoria apertando ENTER. A nova categoria será adicionada ao formulário;
+> `PT - `
+>- 
 >
->- Adicionar um novo produto. Você pode ou não selecionar uma categoria. O produto irá mostrar a categoria selecionada ou "não categorizado";
+>- 
 >
->- Deletar um produto.
+>- 
 >
->- Deletar uma categoria. Se a categoria já estiver sido selecionada, o produto será atualizado e mostrará "não categorizado".
+>- 
 >
 <br>
 
