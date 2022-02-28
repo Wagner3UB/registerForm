@@ -1,0 +1,17 @@
+.confirmation-list{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+  }
+  li:nth-child(2n+1){
+    background-color: lighten(@color-3, 30%);
+  }
+  button{
+    align-self: flex-end;
+  }
+}

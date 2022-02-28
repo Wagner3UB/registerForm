@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+section,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+hr,
+li,
+a,
+img,
+strong,
+em,
+span,
+form,
+input,
+textarea,
+label,
+button,
+input::placeholder {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: inherit;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+img {
+  border: none;
+}
+input,
+textarea,
+button,
+select {
+  background-color: transparent;
+  border: none;
+  display: block;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+textarea {
+  resize: none;
+}
+button {
+  cursor: pointer;
+}
+::selection {
+  background: #1e000e;
+  color: #afc2d5;
+}
+.confirmation-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.confirmation-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.confirmation-list li:nth-child(2n+1) {
+  background-color: #fbf6eb;
+}
+.confirmation-list button {
+  align-self: flex-end;
+}
+.stepper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.stepper .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #deba6f;
+}
+.form-completed_text {
+  padding-top: 20px;
+  color: #3a606e;
+}
+.title {
+  padding-top: 20px;
+  text-align: center;
+  color: #3a606e;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+button {
+  background-color: #afc2d5;
+  color: #3a606e;
+  padding: 10px 0;
+  width: 10rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+button:hover {
+  background-color: #3a606e;
+  color: #afc2d5;
+}

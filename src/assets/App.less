@@ -1,0 +1,29 @@
+@import "./reset.less";
+@import "./variables.less";
+@import "../components/form/Login";
+@import "../components/form/Confirmation";
+@import "../components/form/RegistrationForm";
+
+.title {
+  padding-top: 20px;
+  text-align: center;
+  color: @color-5;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+button {
+  background-color: @color-4;
+  color: @color-5;
+  padding: 10px 0;
+  width: 10rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: @color-5;
+    color: @color-4;
+  }
+}

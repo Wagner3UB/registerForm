@@ -1,71 +1,75 @@
-# Getting Started with Create React App
+# `Hello World!` 🌍
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `THE PROJECT:` Game Store | React/JS, HTML, LESS/CSS
+v2- Version with multiples state components
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+> `EN - This project was made as my first study of React: Class components, hierarchy components, State(), setState(), functions propagation & more. You can:`
+>- Add new categories pressing ENTER. The new category will be added to form;
+>
+>- Add new product. You can add the new category or not. The new product will show the selected category or "uncategorized";
+>
+>- Delete product.
+>
+>- Delete category. If one or more products have the deleted category the category will be updated to "uncategorized"
+>
+> `IT - Questo progetto è il mio primo progetto studiando React: Class components, hierarchia dei componenti, State(), setState(), functions propagation & altri. Puoi:`
+>- Aggiungere nuove categorie premendo ENTER. La nuova categoria verrà aggiunta al form;
+>
+>- Aggiungere un nuovo prodotto. Puoi aggiungere una categoria o no. Il nuovo prodotto mostrerà la categoria selezionata o "senza categoria";
+>
+>- Cancellare un prodotto;
+>
+>- Cancellare una categoria. Se la categoria è stata già vincolata ad un prodotto, questo si aggiornarà e mostrerà "senza categoria";
+>
+> `PT - Este projeto foi meu primeiro projeto estudando React: Class components, hierarchy components, State(), setState(), functions propagation & mais. Nele você poderá:`
+>- Adicionar uma nova categoria apertando ENTER. A nova categoria será adicionada ao formulário;
+>
+>- Adicionar um novo produto. Você pode ou não selecionar uma categoria. O produto irá mostrar a categoria selecionada ou "não categorizado";
+>
+>- Deletar um produto.
+>
+>- Deletar uma categoria. Se a categoria já estiver sido selecionada, o produto será atualizado e mostrará "não categorizado".
+>
+<br>
 
-### `npm start`
+`✔ This code uses:`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=FFFFFF) ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=plastic&logo=html5&logoColor=FFFFFF) ![CSS](https://img.shields.io/badge/CSS-LESS-cccccc?style=plastic&labelColor=1572B6&logo=css3&logoColor=FFFFFF) ![GRUNT](https://img.shields.io/badge/Grunt-FAA918?style=plastic&logo=grunt&logoColor=FFFFFF) ![GITHUB](https://img.shields.io/badge/GitHub-000000?style=plastic&logo=github&logoColor=ffffff)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+`⚠ Site lang: IT || Code lang:` IT/EN
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+<br><br>
+## `☞ ABOUT ME ☜`
 
-### `npm run build`
+✔ My knowledges:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+▶ HTML5
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+▶ CSS ➠ -@Media Queries -Flexbox -Grid -Keyframes/Animation -Selectors -LESS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+▶ JavaScript ➠ -Functions -Objects -Classes -Colections -Arrays -Iterations -Console
 
-### `npm run eject`
+▶ React ➠ -Components -Props -State
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+▶ Wordpress ➠ -Instalation / SetUp / Control pannel - User Management - Plugin Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+▶ NPM basics
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+▶ Grunt Basics
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
+<br>
 
-## Learn More
+`✔ My places:`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[CodePen](https://codepen.io/Wagner3UB) | [GitHub](https://github.com/Wagner3UB/) | [Linkedin profile](https://www.linkedin.com/in/wagner-trezub/) | [Behance](https://www.behance.net/trezub/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✔ For any questions, please contact me: <trezub.w@gmail.com>
 
-### Code Splitting
+⁑ Bye Bye and keep coding ⁑
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# registerForm
+## `⁑ Wagner Trezub ⁑`
