@@ -38,8 +38,8 @@ function PersonalData({sendForm}) {
       />
       <TextField
         onChange={(e) => {
-          let id = e.target.value;
-          setProprieties({...proprieties, id});
+          let idNumber = e.target.value;
+          setProprieties({...proprieties, idNumber});
         }}
         type="number"
         id="idNumber"
