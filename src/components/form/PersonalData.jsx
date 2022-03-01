@@ -3,22 +3,19 @@ import React, { useState } from "react";
 
 function PersonalData({sendForm}) {
   const [proprieties, setProprieties] = useState({})
-  const name = "";
-  const surname = "";
-  const idNumber = "";
-  const date = "";
+
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        sendForm({ name, surname, idNumber, date });
+        sendForm(proprieties);
       }}
     >
       <TextField
-        value={name}
         onChange={(e) => {
-          setName(e.target.value);
+          let name = e.target.value;
+          setProprieties({...proprieties, name});
         }}
         type="text"
         id="name"
@@ -28,9 +25,9 @@ function PersonalData({sendForm}) {
         fullWidth
       />
       <TextField
-        value={surname}
         onChange={(e) => {
-          setSurname(e.target.value);
+          let surname = e.target.value;
+          setProprieties({...proprieties, surname});
         }}
         type="text"
         id="surname"
@@ -40,9 +37,9 @@ function PersonalData({sendForm}) {
         fullWidth
       />
       <TextField
-        value={idNumber}
         onChange={(e) => {
-          setIDNumber(e.target.value);
+          let id = e.target.value;
+          setProprieties({...proprieties, id});
         }}
         type="number"
         id="idNumber"
@@ -52,9 +49,9 @@ function PersonalData({sendForm}) {
         fullWidth
       />
       <TextField
-        value={date}
         onChange={(e) => {
-          setDate(e.target.value);
+          let date = e.target.value;
+          setProprieties({...proprieties, date});
         }}
         type="date"
         id="date"

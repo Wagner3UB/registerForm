@@ -2,20 +2,17 @@ import { TextField } from "@mui/material";
 import React, {useState} from "react";
 
 function Address({sendForm}) {
-  const [street, setStreet] = useState("");
-  const [houseNumber, setHouseNumber] = useState("");
-  const [additionalInfo, setAdditionalInfo] = useState("");
-  const [zipcode, setZipcode] = useState("");
+  const [proprieties, setProprieties] = useState({})
 
   return (
     <form onSubmit={(e)=>{
       e.preventDefault();
-      sendForm({street, houseNumber, additionalInfo, zipcode});
+      sendForm(proprieties);
     }}>
       <TextField
-        value={street}
         onChange={(e) => {
-          setStreet(e.target.value);
+          let street = e.target.value;
+          setProprieties({...proprieties, street});
         }}
         type="text"
         id="street"
@@ -25,9 +22,9 @@ function Address({sendForm}) {
         fullWidth
       />
       <TextField
-        value={houseNumber}
         onChange={(e) => {
-          setHouseNumber(e.target.value);
+          let houseNumber = e.target.value;
+          setProprieties({...proprieties, houseNumber});
         }}
         type="number"
         id="houseNumber"
@@ -37,21 +34,21 @@ function Address({sendForm}) {
         fullWidth
       />
       <TextField
-        value={additionalInfo}
         onChange={(e) => {
-          setAdditionalInfo(e.target.value);
+          let additionalInfo = e.target.value;
+          setProprieties({...proprieties, additionalInfo});
         }}
         type="text"
-        id="addtionalInfo"
-        label="Addicional Info"
+        id="additionalInfo"
+        label="Additional Info"
         variant="outlined"
         margin="dense"
         fullWidth
       />
       <TextField
-        value={zipcode}
         onChange={(e) => {
-          setZipcode(e.target.value);
+          let zipcode = e.target.value;
+          setProprieties({...proprieties, zipcode});
         }}
         type="number"
         id="zipcode"
