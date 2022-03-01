@@ -2,10 +2,11 @@ import { TextField } from "@mui/material";
 import React, { useState } from "react";
 
 function PersonalData({sendForm}) {
-  const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
-  const [idNumber, setIDNumber] = useState("");
-  const [date, setDate] = useState("");
+  const [proprieties, setProprieties] = useState({})
+  const name = "";
+  const surname = "";
+  const idNumber = "";
+  const date = "";
 
   return (
     <form

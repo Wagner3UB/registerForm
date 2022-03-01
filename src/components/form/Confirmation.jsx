@@ -2,6 +2,7 @@ import React from "react";
 
 function Confirmation({ fullData, sendForm }) {
 
+  console.log(Object.keys(fullData));
   return (
     <ul className="confirmation-list">
       <li>
