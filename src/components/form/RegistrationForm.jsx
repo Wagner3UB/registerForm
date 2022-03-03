@@ -46,7 +46,7 @@ function RegistrationForm({completeForm}) {
           <StepLabel>Address</StepLabel>
         </Step>
         <Step>
-          <StepLabel>Finalização</StepLabel>
+          <StepLabel>Confirm</StepLabel>
         </Step>
         <Step>
           <StepLabel>Done!</StepLabel>

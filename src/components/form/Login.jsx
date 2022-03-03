@@ -1,21 +1,27 @@
 import { TextField } from "@mui/material";
-import React, {useState} from "react";
+import React, { useState, useContext } from "react";
+import FormValidations from "../../contexts/FormValidation";
+import useValidations from "../../hooks/useValidations";
 
 function Login({ sendForm }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [proprieties, setProprieties] = useState({});
+
+  const validations = useContext(FormValidations);
+  const [errors, validateField, canSend] = useValidations(validations);
 
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        sendForm({ email, password });
+        if (canSend()) {
+          sendForm(proprieties);
+        }
       }}
     >
       <TextField
-        value={email}
         onChange={(e) => {
-          setEmail(e.target.value);
+          let email = e.target.value;
+          setProprieties({ ...proprieties, email });
         }}
         type="email"
         id="email"
@@ -26,13 +32,34 @@ function Login({ sendForm }) {
         required
       />
       <TextField
-        value={password}
-        onChange={(e)=>{
-          setPassword(e.target.value);
+        onChange={(e) => {
+          let password = e.target.value;
+          setProprieties({ ...proprieties, password });
         }}
+        onBlur={validateField}
+        error={!errors.pwd.valid}
+        helperText={errors.pwd.text}
         type="password"
-        id="password"
+        id="pwd"
+        name="pwd"
         label="Password"
+        variant="outlined"
+        margin="dense"
+        fullWidth
+        required
+      />
+      <TextField
+        onChange={(e) => {
+          let pwdConfirm = e.target.value;
+          setProprieties({ ...proprieties, pwdConfirm });
+        }}
+        onBlur={validateField}
+        error={!errors.pwdConfirm.valid}
+        helperText={errors.pwdConfirm.text}
+        type="password"
+        id="pwdConfirm"
+        name="pwdConfirm"
+        label="Confirm Password"
         variant="outlined"
         margin="dense"
         fullWidth
