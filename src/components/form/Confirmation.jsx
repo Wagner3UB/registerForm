@@ -6,11 +6,22 @@ function Confirmation({ fullData, sendForm }) {
   return (
     <ul className="confirmation-list">
       {propNames.map((element, index) => {
-        console.log(element);
+        let itemValue = () => {
+          if(element === "password" || element === "pwdConfirm"){
+            const passLength = fullData[element].length;
+            let shadowPass = "";
+            for(let i = passLength; i > 0; i--){
+              shadowPass += "*";
+            }
+            return shadowPass;
+          } else {
+            return fullData[element];
+          }
+        }
         return (
           <li key={index}>
             <h4>{element}</h4>
-            <p>{fullData[element]}</p>
+            <p>{itemValue()}</p>
           </li>
         );
       })}

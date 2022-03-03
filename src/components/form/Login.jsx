@@ -48,6 +48,23 @@ function Login({ sendForm }) {
         fullWidth
         required
       />
+      <TextField
+        onChange={(e) => {
+          let pwdConfirm = e.target.value;
+          setProprieties({ ...proprieties, pwdConfirm });
+        }}
+        onBlur={validateField}
+        error={!errors.pwdConfirm.valid}
+        helperText={errors.pwdConfirm.text}
+        type="password"
+        id="pwdConfirm"
+        name="pwdConfirm"
+        label="Confirm Password"
+        variant="outlined"
+        margin="dense"
+        fullWidth
+        required
+      />
       <button className="button-next">Next</button>
     </form>
   );

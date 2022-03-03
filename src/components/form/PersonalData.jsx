@@ -108,7 +108,6 @@ function PersonalData({ sendForm }) {
         <button
           className="button-next"
           onClick={() => {
-            console.log(checkedNews.toString())
             setProprieties({ ...proprieties, checkedNews, checkedPromo });
           }}
         >
