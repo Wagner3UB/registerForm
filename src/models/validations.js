@@ -12,10 +12,11 @@ function validateName(name) {
   let valid = false;
 
   arrayForbidenChars.forEach((e) => {
-    if (name.indexOf(e) !== -1){
+    if (name.indexOf(e) !== -1) {
       valid = true;
     }
   });
+
   if (name.length < 2) {
     return { valid: false, text: "Must have at least 2 chars." };
   } else if (valid) {
@@ -42,22 +43,33 @@ function validatePwd(pwd) {
   const specialChars = /[`!@#$%^&*()_+\-=[\]{};':"|,.<>/?~]/;
 
   if (pwd.length < 4 || pwd.length > 64) {
-    return { valid: false, text: "Password must contain at least 4 digits and no more than 64 digits" };
-  } else if(!specialChars.test(pwd)){
-    return { valid: false, text: "Password must contain at least 1 special character" };
+    return {
+      valid: false,
+      text: "Password must contain at least 4 digits and no more than 64 digits",
+    };
+  } else if (!specialChars.test(pwd)) {
+    return {
+      valid: false,
+      text: "Password must contain at least 1 special character",
+    };
   } else {
     password = pwd;
     return { valid: true, text: "" };
   }
 }
 
-function revalidatePwd (pwdConfirm){
-  if(pwdConfirm !== password){
+function revalidatePwd(pwdConfirm) {
+  if (pwdConfirm !== password) {
     return { valid: false, text: "Password is diferent, please retry" };
   } else {
     return { valid: true, text: "" };
   }
 }
 
-
-export { validateIdNumber, validatePwd, revalidatePwd, validateName, validateSurname };
+export {
+  validateIdNumber,
+  validatePwd,
+  revalidatePwd,
+  validateName,
+  validateSurname,
+};

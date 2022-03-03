@@ -4,7 +4,8 @@ const FormValidations = React.createContext({
   name: withoutValidation,
   surname: withoutValidation,
   pwd: withoutValidation,
-  idNumber: withoutValidation
+  idNumber: withoutValidation,
+  pwdConfirm: withoutValidation
 });
 
 function withoutValidation(){

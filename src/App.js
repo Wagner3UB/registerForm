@@ -23,7 +23,7 @@ function App() {
           surname: validateSurname,
           pwd: validatePwd,
           idNumber: validateIdNumber,
-          pwdConfirm: revalidatePwd,
+          pwdConfirm: revalidatePwd
         }}
       >
         <RegistrationForm completeForm={sendToDB} />
